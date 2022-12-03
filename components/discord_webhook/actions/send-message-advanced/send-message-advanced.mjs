@@ -44,9 +44,6 @@ export default {
         threadID,
         username,
         embeds,
-        content: includeSentViaPipedream
-          ? this.appendPipedreamText(message ?? "")
-          : message,
       });
       $.export("$summary", "Message sent successfully");
     } catch (err) {
